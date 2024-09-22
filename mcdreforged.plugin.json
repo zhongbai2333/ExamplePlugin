@@ -1,0 +1,19 @@
+{
+    "id": "example_plugin",
+    "version": "0.0.1",
+    "name": "CliCore",
+    "description": {
+        "en_us": "An Example Plugin about ConnectCore",
+        "zh_cn": "ConnectCore的实例插件"
+    },
+    "author": "zhongbai233",
+    "link": "https://github.com/zhongbai2333/ExamplePlugin",
+    "dependencies": {},
+    "entrypoint": "example_plugin.mcdr.entry",
+    "archive_name": "ExamplePlugin-v{version}.mcdr",
+    "resources": [
+        "lang",
+        "connectcore.plugin.json",
+        "LICENSE"
+    ]
+}
