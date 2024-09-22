@@ -41,7 +41,7 @@ class CoreControlInterface:
         """
         pass
 
-    def tr(self, key: str):
+    def tr(self, key: str) -> str:
         """
         获取翻译项 | `translate函数的别称`
 
@@ -100,11 +100,19 @@ class PluginControlInterface(CoreControlInterface):
 
         Args:
             sid (str): 插件ID
+            sinfo (dict): 插件Info
             self_path (str): 自身路径
             config_path (str): 配置文件路径
         """
         # 导入
         super().__init__()
+
+        self.sid = ""
+        self.sinfo = {}
+        self.self_path = ""
+        self.config_path = ""
+        self.log_system = False
+        self.language = ""
         pass
 
     # ========
