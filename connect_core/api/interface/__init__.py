@@ -134,3 +134,15 @@ class PluginControlInterface(CoreControlInterface):
             save_path (str): 要保存的位置。
         """
         pass
+
+    # =========
+    #   Tools
+    # =========
+    def is_server(self) -> bool:
+        """
+        判断是否为服务器
+
+        Returns:
+            bool: 是/否
+        """
+        pass
