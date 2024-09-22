@@ -41,7 +41,7 @@ class CoreControlInterface:
         """
         pass
 
-    def tr(self, key: str):
+    def tr(self, key: str) -> str:
         """
         获取翻译项 | `translate函数的别称`
 
