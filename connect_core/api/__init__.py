@@ -22,4 +22,5 @@ __all__ = [
     "verify_file_hash",
     "append_to_path",
     "is_server",
+    "get_server_id",
 ]

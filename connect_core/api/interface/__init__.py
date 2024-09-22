@@ -154,3 +154,12 @@ class PluginControlInterface(CoreControlInterface):
             bool: 是/否
         """
         pass
+
+    def get_server_id(self) -> str:
+        """
+        客户端反馈服务器ID
+
+        Returns:
+            str: 服务器ID
+        """
+        pass
