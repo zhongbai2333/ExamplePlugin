@@ -45,23 +45,25 @@ def disconnected():
     pass
 
 
-def recv_data(sid: str, data: dict):
+def recv_data(sid: str, from_server_id: str, data: dict):
     """
     收到数据包
 
     Args:
         sid (str): 插件ID
+        from_server_id (str): 来自的服务器ID
         data (dict): 收到的数据
     """
     pass
 
 
-def recv_file(sid: str, file: str):
+def recv_file(sid: str, from_server_id: str, file: str):
     """
     收到文件
 
     Args:
         sid (str): 插件ID
+        from_server_id (str): 来自的服务器ID
         file (str): 收到的文件地址
     """
     pass

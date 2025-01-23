@@ -32,11 +32,11 @@ def disconnected():
     _control_interface.info("Disconnected!")
 
 
-def recv_data(data: dict):
+def recv_data(server_id: str, data: dict):
     """收到数据包"""
     _control_interface.info(data)
 
 
-def recv_file(file: str):
+def recv_file(server_id: str, file: str):
     """收到文件"""
     _control_interface.info(file)
