@@ -139,7 +139,7 @@ class PluginControlInterface(CoreControlInterface):
         pass
 
     def send_file(
-        self, server_id: str, plugin_id: str, file_path: str, save_path: str = None
+        self, server_id: str, plugin_id: str, file_path: str, save_path: str
     ):
         """
         向指定的服务器发送文件。

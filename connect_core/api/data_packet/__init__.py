@@ -74,17 +74,6 @@ class DataPacket(object):
         """
         pass
 
-    def _get_sid(self, server_id: str, add_sid: bool = True) -> dict:
-        """
-        获取sid
-
-        Args:
-            server_id (str): 服务器id
-            add_sid (bool): 是否添加sid，默认为True
-        :return: sid字典
-        """
-        pass
-
     def get_file_hash(self, file_path, algorithm="sha256") -> str | None:
         """
         获取文件的哈希值。

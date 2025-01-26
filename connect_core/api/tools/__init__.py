@@ -9,6 +9,9 @@ def new_thread(arg: Optional[Union[str, Callable]] = None):
 
 
 def auto_trigger(interval: float, thread_name: Optional[str] = None):
+    """
+    定时启动一个新的线程运行装饰的函数，同时支持类方法和普通函数。
+    """
     pass
 
 
