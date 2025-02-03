@@ -95,6 +95,52 @@ class CoreControlInterface:
         """
         pass
 
+    # ============
+    #   Command
+    # ============
+    def add_command(self, command: str, func: callable):
+        """
+        添加命令到命令行界面中。
+
+        Args:
+            command (str): 命令名称。
+            func (callable): 命令对应的函数。
+        """
+        pass
+
+    def remove_command(self, command: str):
+        """
+        移除命令从命令行界面中。
+
+        Args:
+            command (str): 命令名称。
+        """
+        pass
+
+    def set_prompt(self, prompt: str):
+        """
+        设置命令行提示符。
+
+        Args:
+            prompt (str): 命令行提示符内容。
+        """
+        pass
+
+    def set_completer_words(self, words: dict):
+        """
+        设置命令行补全词典。
+
+        Args:
+            words (dict): 命令行补全词典内容。
+        """
+        pass
+
+    def flush_cli(self):
+        """
+        清空命令行界面。
+        """
+        pass
+
     # =========
     #   Tools
     # =========
