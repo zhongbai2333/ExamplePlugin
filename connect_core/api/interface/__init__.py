@@ -153,6 +153,24 @@ class CoreControlInterface:
         """
         pass
 
+    def get_server_list(self) -> list:
+        """
+        获取服务器列表
+        
+        Returns:
+            list: 服务器列表
+        """
+        pass
+
+    def get_server_id(self) -> str:
+        """
+        客户端反馈服务器ID
+
+        Returns:
+            str: 服务器ID
+        """
+        pass
+
 
 class PluginControlInterface(CoreControlInterface):
     def __init__(self, sid: str, sinfo: dict, self_path: str, config_path: str):
@@ -201,15 +219,6 @@ class PluginControlInterface(CoreControlInterface):
     # =========
     #   Tools
     # =========
-    def get_server_id(self) -> str:
-        """
-        客户端反馈服务器ID
-
-        Returns:
-            str: 服务器ID
-        """
-        pass
-
     def get_history_packet(self, server_id: str = None) -> list | None:
         """
         获取历史数据包，客户端无需参数
