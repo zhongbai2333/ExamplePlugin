@@ -8,7 +8,9 @@
     },
     "author": "zhongbai233",
     "link": "https://github.com/zhongbai2333/ExamplePlugin",
-    "dependencies": {},
+    "dependencies": {
+        "connect_core": "*"
+    },
     "entrypoint": "example_plugin.mcdr.entry",
     "archive_name": "ExamplePlugin-v{version}.mcdr",
     "resources": [
