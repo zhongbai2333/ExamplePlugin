@@ -13,14 +13,23 @@ def on_load(server: PluginServerInterface, _):
     _control_interface.info("Hello")
 
 
-def new_connect(server_list):
+def new_connect(server_id):
     """有新的连接"""
-    _control_interface.info(server_list)
+    _control_interface.info(server_id)
 
 
-def del_connect(server_list):
+def del_connect(server_id):
     """有断开连接"""
-    _control_interface.info(server_list)
+    _control_interface.info(server_id)
+
+
+def websockets_started():
+    """
+    websocket启动/连接成功
+    服务端为启动成功
+    客户端为连接成功
+    """
+    _control_interface.info("Websockets Started!")
 
 
 def connected():
